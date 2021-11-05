@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_card_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/power_user_energy_usage_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Energy usage" />
+
+                <TextView
+                    android:id="@+id/power_user_date_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="October, 2021"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/text_background_color"
+                android:weightSum="2"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/power_user_energy_saving_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Energy saving"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/power_user_percentage_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40%"
+                    android:textColor="@color/orange"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:textFontWeight="900"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:background="@drawable/power_user_icon_background"
+                        android:src="@drawable/ic_power_user_plug"
+                        android:scaleType="centerCrop"
+                        android:padding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="40dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/power_user_monthly_voltage_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:text="Monthly" />
+
+                        <TextView
+                            android:id="@+id/power_user_voltage_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:text="301,81 kWh" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cornerRadius="7dp"
+                    android:layout_gravity="end"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/light_blue"
+                    android:text="Detail"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

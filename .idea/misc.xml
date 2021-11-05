@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.29583333333333334" />
+        <entry key="../../Library/Android/sdk/platforms/android-31/data/res/layout-xlarge/activity_list.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/air_conditioner_toolbar.xml" value="0.20185185185185187" />
+        <entry key="app/src/main/res/drawable/bottom_tab_color.xml" value="0.23055555555555557" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/device_spinner_bg.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/ic_airwave.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/ic_all_back_button.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.20185185185185187" />
+        <entry key="app/src/main/res/drawable/ic_cooling.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/ic_device_item_list_wifi_router.xml" value="0.2462962962962963" />
+        <entry key="app/src/main/res/drawable/ic_drop_down.xml" value="0.20185185185185187" />
+        <entry key="app/src/main/res/drawable/ic_home_lighting.xml" value="0.24074074074074073" />
+        <entry key="app/src/main/res/drawable/ic_power_user_more.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/ic_power_user_plug.xml" value="0.20185185185185187" />
+        <entry key="app/src/main/res/drawable/ic_toolbar_menu.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/icon_heating.xml" value="0.296875" />
+        <entry key="app/src/main/res/drawable/power_user_icon_background.xml" value="0.2462962962962963" />
+        <entry key="app/src/main/res/drawable/spinner_bg.xml" value="0.23055555555555557" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23512747875354106" />
+        <entry key="app/src/main/res/layout/air_cond_setting_item.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/fragment_air_conditioner.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_home_layout.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_power_user.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/home_device_item_list.xml" value="0.20555555555555555" />
+        <entry key="app/src/main/res/layout/home_layout.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/power_user_item_list.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.28072916666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

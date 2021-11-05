@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeLayoutFragment">
+
+    <fragment
+        android:id="@+id/homeLayoutFragment"
+        android:name="com.decagon.mubarak.team_apt_take_home.HomeLayoutFragment"
+        android:label="fragment_home_layout"
+        tools:layout="@layout/fragment_home_layout">
+        <action
+            android:id="@+id/action_homeLayoutFragment_to_airConditionerFragment"
+            app:destination="@id/airConditionerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/powerUserFragment"
+        android:name="com.decagon.mubarak.team_apt_take_home.PowerUserFragment"
+        android:label="fragment_power_user"
+        tools:layout="@layout/fragment_power_user" />
+    <fragment
+        android:id="@+id/airConditionerFragment"
+        android:name="com.decagon.mubarak.team_apt_take_home.AirConditionerFragment"
+        android:label="fragment_air_conditioner"
+        tools:layout="@layout/fragment_air_conditioner" />
+</navigation>

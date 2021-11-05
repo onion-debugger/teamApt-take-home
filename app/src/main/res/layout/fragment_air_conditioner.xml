@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".AirConditionerFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/air_conditioner_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_all_back_button">
+
+        <TextView
+            android:id="@+id/toolbar_title_textView"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/air_conditioner_toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_picture"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/air_conditioner_toolbar"
+        android:padding="@dimen/dimen_5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_power_settings_new_24"
+        app:layout_constraintBottom_toBottomOf="@+id/air_conditioner_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/air_conditioner_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/air_conditioner_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/air_conditioner_toolbar"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/air_conditioner_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:text="Panasonic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/spn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/device_spinner_bg"
+                app:layout_constraintEnd_toEndOf="@+id/air_conditioner_name_textView"
+                app:layout_constraintStart_toStartOf="@+id/air_conditioner_name_textView"
+                app:layout_constraintTop_toBottomOf="@+id/air_conditioner_name_textView">
+
+                <Spinner
+                    android:id="@+id/device_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:padding="@dimen/dimen_5dp"
+                    android:paddingEnd="@dimen/dimen_2dp"
+                    android:text="Device 1"
+                    app:layout_constraintBottom_toBottomOf="@+id/spn"
+                    app:layout_constraintStart_toStartOf="@+id/spn"
+                    app:layout_constraintTop_toTopOf="@+id/spn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/air_conditioner_recyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:spanCount="3"
+                tools:itemCount="3"
+                tools:listitem="@layout/air_cond_setting_item" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="32dp"
+                android:indeterminateOnly="false"
+                android:max="30"
+                android:min="10"
+                android:progressDrawable="@drawable/circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spn"
+                tools:progress="40" />
+
+            <TextView
+                android:id="@+id/progress_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+                app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                app:layout_constraintStart_toStartOf="@+id/progressBar"
+                app:layout_constraintTop_toTopOf="@+id/progressBar"
+                tools:text="27°C" />
+
+            <Button
+                android:id="@+id/progress_bar_minus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/light_blue"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="@+id/progress_current_temperature"
+                app:layout_constraintStart_toStartOf="@+id/progressBar"
+                app:layout_constraintTop_toTopOf="@+id/progress_current_temperature" />
+
+            <Button
+                android:id="@+id/progress_bar_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/light_blue"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/progress_current_temperature"
+                app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                app:layout_constraintTop_toTopOf="@+id/progress_current_temperature" />
+
+            <TextView
+                android:id="@+id/progress_current_temperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/progress_bar_counter_text"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/air_conditioner_recyclerView"
+                app:layout_constraintEnd_toStartOf="@+id/progress_bar_add"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/progress_bar_minus"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                app:layout_constraintVertical_bias="0.142" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
